@@ -8,7 +8,11 @@ const TestResultList = ({ user }) => {
   const fetchTestResults = async () => {
     try {
       const results = await getTestResults();
+      const fillteredResults = testResults.filter(
+        (e) => e.visibility === true || e.userId === userId
+      );
 
+      setTestResults(fillteredResults);
       setTestResults(results);
     } catch (error) {
       setError("데이터 로딩 오류");
