@@ -1,8 +1,20 @@
-# React + Vite
+# MBTI-TEST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+비교적 적은 문항으로 자신의 mbti를 알수있는 웹</br>
 
-Currently, two official plugins are available:
+회원가입과 마이페이지에서 닉네임 변경이 가능하며 타인의 결과도 볼수있음</br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 회원가입
+인증서버로 접속해 가입한다</br>
+
+# 로그인
+인증서버로 접속해 로그인할경우 15분간 유효한 토큰값과 유저 정보를 받아온다.</br>
+
+# 테스트 및 결과
+테스트 결과는 타인과 내 결과를 볼수있으며 </br>
+내 결과에 한해서 visibility 세팅을 통하여 타인에게 결과를 보여주거나</br>
+삭제 버튼을 통해 내 결과를 삭제할 수 있다. </br>
+
+# 서버 접속 구현
+axios를 통한 인터셉터 구현으로 서버에러를 표시하거나 요청에 해더를 추가함 </br>
+
